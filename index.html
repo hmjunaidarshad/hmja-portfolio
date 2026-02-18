@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="home.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="brand" href="#home">
+                <img src="logo/hmja_logo.png" alt="ZHacker Logo" width="100" />
+            </a>
+
+            <!-- CUSTOM TOGGLER -->
+            <button class="navbar-toggler hacker-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="line top"></span>
+                <span class="line middle"></span>
+                <span class="line bottom"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <canvas id="anonCanvas"></canvas>
+    <section>
+        <section id="home" class="container my-section d-flex align-items-center p-5 mt-5" style=" color: #00ffff;">
+            <div class="row w-100">
+                <!-- Left Info Side -->
+                <div class="col-md-6 p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <!-- Profile Image -->
+                        <img src="profile.jpg" alt="Eng. H M Junaid Arshad" class="me-3 dp-img">
+
+                        <!-- Name -->
+                        <h1 class="fw-bold glow-text mb-0">Eng. H M Junaid Arshad</h1>
+                    </div>
+
+                    <h4>Full-Stack Laravel Engineer | ERP/CRM/HRM & SaaS Development Expert | APIs, AJAX & System
+                        Architecture | Cyber Security & Ethical Hacking Certified</h4>
+                    <!-- <p class="mt-3">
+                        Passionate about cybersecurity, ethical hacking, and secure web development. Experienced in Kali
+                        Linux, phishing simulations, and front-end web design. Currently enrolled in certified training
+                        and building a path in digital defense.
+                    </p> -->
+                    <div class="mt-4">
+                        <!-- <a href="#contact" class="btn btn-outline-info me-3">Get In Touch</a> -->
+                        <a href="cv/HMJA Resume PDF.pdf" download="HMJA Resume PDF.pdf"
+                            class="btn btn-outline-info  me-3">Download CV</a>
+                    </div>
+                    <!-- Social Icons -->
+                    <div class="mt-4 social-icons">
+                        <a href="https://www.facebook.com/h.m.junaid.arshad/" class="me-3 icon-link"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/hmja_developer/" class="me-3 icon-link"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/hmjunaidarshad" class="me-3 icon-link"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/h-m-junaid-arshad-1407682a7/" class="me-3 icon-link"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+
+                <!-- Right Icon Side -->
+                <div class="col-md-6 d-flex justify-content-center align-items-center position-relative">
+                    <div class="shield-icon-wrapper">
+                        <div class="circle-pulse"></div>
+                        <i id="securityIcon" class="fas fa-shield-alt text-info big-icon position-relative"
+                            style="z-index: 2;"></i>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="particle-box col-md-6 p-0">
+            <div id="tsparticles" style="width: 100%; height: 100%;"></div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="py-5" style="background-color: #0a0a0ae0; color: #00ffff;">
+            <div class="container">
+                <!-- Heading -->
+                <div class="text-center">
+                    <!-- <h2 class="about-text">About Me</h2> -->
+                    <h2 class="glitch-heading  text-center mb-5" data-text="Contact Me">About Me</h2>
+                </div>
+
+
+                <!-- Row -->
+                <div class="row">
+                    <!-- Left Column: About Text -->
+                    <div class="col-md-6" style="font-size: 19px;">
+                        <p>
+                            Passionate Full Stack Developer and Cybersecurity Enthusiast with a strong ability to
+                            transform complex problems into efficient, scalable solutions. Experienced in both front-end
+                            and back-end development, building responsive, user-centric web applications using modern
+                            technologies and frameworks. Certified in ethical hacking with a solid understanding of
+                            security best practices. A collaborative team player committed to continuous learning, clean
+                            code, and delivering high-impact software that aligns with business goals.
+
+                        </p>
+                    </div>
+
+
+                    <!-- Right Column: Contact Info Box -->
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <div class="contact-box-modern p-4 w-100 rounded-4">
+                            <h4 class="mb-4 text-info text-center">
+                                <i class="fas fa-address-card me-2"></i>Contact Info
+                            </h4>
+
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="fas fa-envelope me-3 text-info mt-1"></i>
+                                <div>
+                                    <strong>Email:</strong><br>
+                                    <a href="mailto:hmjunaidarshad4@gmail.com" class="text-decoration-none text-light">
+                                        hmjunaidarshad4@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="fas fa-phone me-3 text-info mt-1"></i>
+                                <div>
+                                    <strong>Phone:</strong><br>
+                                    <a href="https://wa.me/923122243045" target="_blank"
+                                        class="text-decoration-none text-light">
+                                        0312-2243045
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-map-marker-alt me-3 text-info mt-1"></i>
+                                <a href="https://maps.app.goo.gl/s25aWc2iHzhgm5Uk6" target="_blank">
+                                    <div>
+                                        <strong>Location:</strong><br>
+                                        Karachi, Pakistan
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-5 skill-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <!-- <h2 class="about-text">Skills</h2> -->
+                    <h2 class="glitch-heading  text-center mb-5" data-text="Contact Me">Skill</h2>
+                </div>
+
+                <div class="row">
+
+                    <!-- Security Column -->
+                    <div class="col-md-6 mb-4 ">
+                        <h4 class="skill-heading text-center">Cyber Security</h4>
+                        <div class="d-flex flex-column gap-3 mt-3">
+                            <div class="skill-bar" data-skill="85%">Kali Linux</div>
+                            <div class="skill-bar" data-skill="80%">Burp Suite (Web Testing)</div>
+                            <div class="skill-bar" data-skill="75%">Aircrack-ng Toolkit</div>
+                            <div class="skill-bar" data-skill="75%">Wi-Fi Security & Cracking</div>
+                            <div class="skill-bar" data-skill="80%">Wireshark Network Analysis</div>
+                            <div class="skill-bar" data-skill="70%">Encryption & Decryption</div>
+                            <div class="skill-bar" data-skill="70%">Steganography (Hidden Data in Images)</div>
+                            <div class="skill-bar" data-skill="65%">TLS/SSL & Certificate Creation</div>
+                            <div class="skill-bar" data-skill="70%">Vulnerability Assessment</div>
+                            <div class="skill-bar" data-skill="65%">Ethical Hacking Fundamentals</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 ">
+                        <h4 class="skill-heading text-center">Web Development</h4>
+                        <div class="d-flex flex-column gap-3 mt-3">
+                            <div class="skill-bar" data-skill="90%">PHP Laravel</div>
+                            <div class="skill-bar" data-skill="85%">RESTful APIs</div>
+                            <div class="skill-bar" data-skill="85%">MySQL / SQL Server</div>
+                            <div class="skill-bar" data-skill="80%">HTML / CSS / Bootstrap</div>
+                            <div class="skill-bar" data-skill="80%">JavaScript / jQuery / AJAX</div>
+                            <div class="skill-bar" data-skill="75%">React.js</div>
+                            <div class="skill-bar" data-skill="80%">MVC Architecture</div>
+                            <div class="skill-bar" data-skill="75%">ERP / CRM Systems</div>
+                            <div class="skill-bar" data-skill="70%">Server Deployment & Linux</div>
+                            <div class="skill-bar" data-skill="75%">Authentication & API Security</div>
+                            <div class="skill-bar" data-skill="80%">Git & Version Control</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="tools-section py-5">
+            <div class="container text-center mb-4">
+                <h2 class="about-text">Tools I Use</h2>
+            </div>
+
+            <div class="marquee-wrapper">
+                <div class="marquee-track">
+                    <div class="logo-group">
+
+                        <!-- Kali Linux -->
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                            alt="Kali Linux" data-bs-toggle="tooltip" title="Kali Linux">
+
+                        <!-- Burp Suite -->
+                        <img src="https://www.kali.org/tools/burpsuite/images/burpsuite-logo.svg" alt="Burp Suite"
+                            data-bs-toggle="tooltip" title="Burp Suite">
+
+                        <!-- Wireshark -->
+                        <img src="https://www.vectorlogo.zone/logos/wireshark/wireshark-icon.svg" alt="Wireshark"
+                            data-bs-toggle="tooltip" title="Wireshark">
+
+                        <!-- Aircrack-ng -->
+                        <img src="https://www.kali.org/tools/aircrack-ng/images/aircrack-ng-logo.svg" alt="Aircrack-ng"
+                            data-bs-toggle="tooltip" title="Aircrack-ng">
+
+                        <!-- Nmap -->
+                        <img src="https://nmap.org/images/nmap-logo-256x256.png" alt="Nmap" data-bs-toggle="tooltip"
+                            title="Nmap">
+
+                        <!-- Metasploit -->
+                        <img src="tools/metasploit.jpg" alt="Metasploit" data-bs-toggle="tooltip" title="Metasploit">
+
+                        <!-- OpenSSL -->
+                        <img src="https://www.vectorlogo.zone/logos/openssl/openssl-icon.svg" alt="OpenSSL"
+                            data-bs-toggle="tooltip" title="OpenSSL">
+
+                        <!-- Laravel -->
+                        <img src="https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg" alt="Laravel"
+                            data-bs-toggle="tooltip" title="Laravel">
+
+                        <!-- PHP -->
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"
+                            data-bs-toggle="tooltip" title="PHP">
+
+                        <!-- MySQL -->
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                            alt="MySQL" data-bs-toggle="tooltip" title="MySQL">
+
+                        <!-- GitHub -->
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            alt="GitHub" data-bs-toggle="tooltip" title="GitHub">
+
+                        <!-- Postman -->
+                        <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman"
+                            data-bs-toggle="tooltip" title="Postman">
+
+                        <!-- VS Code -->
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                            alt="VS Code" data-bs-toggle="tooltip" title="VS Code">
+
+                        <!-- Bootstrap -->
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                            alt="Bootstrap" data-bs-toggle="tooltip" title="Bootstrap">
+
+                        <!-- React -->
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                            alt="React" data-bs-toggle="tooltip" title="React">
+
+                    </div>
+
+                    <div class="logo-group">
+
+                        <!-- Kali Linux -->
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                            alt="Kali Linux" data-bs-toggle="tooltip" title="Kali Linux">
+
+                        <!-- Burp Suite -->
+                        <img src="https://www.kali.org/tools/burpsuite/images/burpsuite-logo.svg" alt="Burp Suite"
+                            data-bs-toggle="tooltip" title="Burp Suite">
+
+                        <!-- Wireshark -->
+                        <img src="https://www.vectorlogo.zone/logos/wireshark/wireshark-icon.svg" alt="Wireshark"
+                            data-bs-toggle="tooltip" title="Wireshark">
+
+                        <!-- Aircrack-ng -->
+                        <img src="https://www.kali.org/tools/aircrack-ng/images/aircrack-ng-logo.svg" alt="Aircrack-ng"
+                            data-bs-toggle="tooltip" title="Aircrack-ng">
+
+                        <!-- Nmap -->
+                        <img src="https://nmap.org/images/nmap-logo-256x256.png" alt="Nmap" data-bs-toggle="tooltip"
+                            title="Nmap">
+
+                        <!-- Metasploit -->
+                        <img src="tools/metasploit.jpg" alt="Metasploit" data-bs-toggle="tooltip" title="Metasploit">
+
+                        <!-- OpenSSL -->
+                        <img src="https://www.vectorlogo.zone/logos/openssl/openssl-icon.svg" alt="OpenSSL"
+                            data-bs-toggle="tooltip" title="OpenSSL">
+
+                        <!-- Laravel -->
+                        <img src="https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg" alt="Laravel"
+                            data-bs-toggle="tooltip" title="Laravel">
+
+                        <!-- PHP -->
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"
+                            data-bs-toggle="tooltip" title="PHP">
+
+                        <!-- MySQL -->
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                            alt="MySQL" data-bs-toggle="tooltip" title="MySQL">
+
+                        <!-- GitHub -->
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            alt="GitHub" data-bs-toggle="tooltip" title="GitHub">
+
+                        <!-- Postman -->
+                        <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman"
+                            data-bs-toggle="tooltip" title="Postman">
+
+                        <!-- VS Code -->
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                            alt="VS Code" data-bs-toggle="tooltip" title="VS Code">
+
+                        <!-- Bootstrap -->
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                            alt="Bootstrap" data-bs-toggle="tooltip" title="Bootstrap">
+
+                        <!-- React -->
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                            alt="React" data-bs-toggle="tooltip" title="React">
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Education Section -->
+        <section id="education" class="edu-grid-section py-5">
+            <div class="container text-center">
+                <!-- <h2 class="about-text text-center mb-5">Education</h2> -->
+                <h2 class="glitch-heading  text-center mb-5" data-text="Contact Me">Education</h2>
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-md-6 m-auto">
+                        <div class="edu-card p-4 my-2" data-bs-toggle="modal" data-bs-target="#marksheetModal1">
+                            <h5>Bachelor: Software Engineering</h5>
+                            <p class="edu-sub">Sir Syed University of Engineering & Technology | 2021 - 2025</p>
+                            <p class="edu-sub">Karachi, Pakistan</p>
+
+                            <ul>
+                                <!-- <li>Grade: C</li> -->
+                                <li>CGPA: 2.76</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 m-auto ">
+                        <div class="edu-card p-4 my-2" data-bs-toggle="modal" data-bs-target="#marksheetModal1">
+                            <h5>Intermediate: Pre Engineering</h5>
+                            <p class="edu-sub">Govt. Degree Boys Collage Buffer Zone | 2019 - 2021</p>
+                            <p class="edu-sub">Karachi, Pakistan</p>
+
+                            <ul>
+                                <li>Grade: C</li>
+                                <li>Percentage: 50.18%</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 m-auto">
+                        <div class="edu-card p-4 my-2" data-bs-toggle="modal" data-bs-target="#marksheetModal1">
+                            <h5>Matriculation: Computer Science</h5>
+                            <p class="edu-sub">L'ycos Grammar School | 2017 - 2019</p>
+                            <p class="edu-sub">Karachi, Pakistan</p>
+
+                            <ul>
+                                <li>Grade: B</li>
+                                <li>Percentage: 65.00%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section id="certifications" class="cert-section-clean py-5">
+            <div class="container">
+                <div class="container text-center">
+                    <!-- <h2 class="about-text">My Certificates</h2> -->
+                    <h2 class="glitch-heading  text-center mb-5" data-text="Contact Me">My Certificates</h2>
+                </div>
+                <div class="row g-4 my-2 justify-content-center">
+                    <!-- -------------------------------------------------------- -->
+                    <div class="col-md-4">
+                        <div id="imgPopup" class="img-popup">
+                            <div class="popup-box">
+                                <span class="popup-close">&times;</span>
+                                <img class="popup-img " src="certificates/6.jpg" alt="Certificate">
+                            </div>
+                        </div>
+                        <div class="cert-card-clean shadow-sm">
+                            <div class="text-center">
+                                <img src="certificates/6.jpg" class="img-fluid rounded cert-img" alt="CEH" />
+                            </div>
+                            <div class="cert-body mt-3 text-center">
+                                <h5 class="mb-1">Certificate of Internship — Web Developer - ASP.NET MVC</h5>
+                                <p class="cert-subtext">Rising Institute of Computer & IT | December 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="imgPopup" class="img-popup">
+                            <div class="popup-box">
+                                <span class="popup-close">&times;</span>
+                                <img class="popup-img " src="certificates/7.jpg" alt="Certificate">
+                            </div>
+                        </div>
+                        <div class="cert-card-clean shadow-sm">
+                            <div class="text-center">
+                                <img src="certificates/7.jpg" class="img-fluid rounded cert-img" alt="CEH" />
+                            </div>
+                            <div class="cert-body mt-3 text-center">
+                                <h5 class="mb-1">Certificate of Internship — Junior Full Stack Developer</h5>
+                                <p class="cert-subtext">Scitforte | 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="imgPopup" class="img-popup">
+                            <div class="popup-box">
+                                <span class="popup-close">&times;</span>
+                                <img class="popup-img " src="certificates/8.jpg" alt="Certificate">
+                            </div>
+                        </div>
+                        <div class="cert-card-clean shadow-sm">
+                            <div class="text-center">
+                                <img src="certificates/8.jpg" class="img-fluid rounded cert-img" alt="CEH" />
+                            </div>
+                            <div class="cert-body mt-3 text-center">
+                                <h5 class="mb-1">Certificate of Recognition — For Being an Emerging Star</h5>
+                                <p class="cert-subtext">Scitforte | December 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 my-2 justify-content-center">
+                    <!-- -------------------------------------------------------- -->
+                    <div class="col-md-4">
+                        <div id="imgPopup" class="img-popup">
+                            <div class="popup-box">
+                                <span class="popup-close">&times;</span>
+                                <img class="popup-img " src="certificates/3.jpg" alt="Certificate">
+                            </div>
+                        </div>
+                        <div class="cert-card-clean shadow-sm">
+                            <div class="text-center">
+                                <img src="certificates/3.jpg" class="img-fluid rounded cert-img" alt="CEH" />
+                            </div>
+                            <div class="cert-body mt-3 text-center">
+                                <h5 class="mb-1">Certificate of Achievement — Project Exhibition 2023</h5>
+                                <p class="cert-subtext">Sir Syed University of Engineering & Technology | 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="imgPopup" class="img-popup">
+                            <div class="popup-box">
+                                <span class="popup-close">&times;</span>
+                                <img class="popup-img " src="certificates/4.jpg" alt="Certificate">
+                            </div>
+                        </div>
+                        <div class="cert-card-clean shadow-sm">
+                            <div class="text-center">
+                                <img src="certificates/4.jpg" class="img-fluid rounded cert-img" alt="CEH" />
+                            </div>
+                            <div class="cert-body mt-3 text-center">
+                                <h5 class="mb-1">Certificate of Achievement — Project Exhibition 2023</h5>
+                                <p class="cert-subtext">Sir Syed University of Engineering & Technology | 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="imgPopup" class="img-popup">
+                            <div class="popup-box">
+                                <span class="popup-close">&times;</span>
+                                <img class="popup-img " src="certificates/5.jpg" alt="Certificate">
+                            </div>
+                        </div>
+                        <div class="cert-card-clean shadow-sm">
+                            <div class="text-center">
+                                <img src="certificates/5.jpg" class="img-fluid rounded cert-img" alt="CEH" />
+                            </div>
+                            <div class="cert-body mt-3 text-center">
+                                <h5 class="mb-1">Certificate of Achievement — Project Exhibition 2024</h5>
+                                <p class="cert-subtext">Sir Syed University of Engineering & Technology | 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 my-2 justify-content-center">
+                    <div class="col-md-4">
+                        <div id="imgPopup" class="img-popup">
+                            <div class="popup-box">
+                                <span class="popup-close">&times;</span>
+                                <img class="popup-img " src="certificates/0.jpg" alt="Certificate">
+                            </div>
+                        </div>
+                        <div class="cert-card-clean shadow-sm">
+                            <div class="text-center">
+                                <img src="certificates/0.jpg" class="img-fluid rounded cert-img" alt="CEH" />
+                            </div>
+                            <div class="cert-body mt-3 text-center">
+                                <h5 class="mb-1">Certificate of Appreciation — Academic Excellence</h5>
+                                <p class="cert-subtext">Aptech Learning, North Nazimabad | August 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="imgPopup" class="img-popup">
+                            <div class="popup-box">
+                                <span class="popup-close">&times;</span>
+                                <img class="popup-img " src="certificates/1.jpg" alt="Certificate">
+                            </div>
+                        </div>
+                        <div class="cert-card-clean shadow-sm">
+                            <div class="text-center">
+                                <img src="certificates/1.jpg" class="img-fluid rounded cert-img" alt="CEH" />
+                            </div>
+                            <div class="cert-body mt-3 text-center">
+                                <h5 class="mb-1">Certificate of Appreciation — Academic Excellence</h5>
+                                <p class="cert-subtext">Aptech Learning, North Nazimabad | March 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="imgPopup" class="img-popup">
+                            <div class="popup-box">
+                                <span class="popup-close">&times;</span>
+                                <img class="popup-img " src="certificates/2.jpg" alt="Certificate">
+                            </div>
+                        </div>
+                        <div class="cert-card-clean shadow-sm">
+                            <div class="text-center">
+                                <img src="certificates/2.jpg" class="img-fluid rounded cert-img" alt="CEH" />
+                            </div>
+                            <div class="cert-body mt-3 text-center">
+                                <h5 class="mb-1">Certificate of Dynamic Website — Aptech Vision</h5>
+                                <p class="cert-subtext">Aptech Learning, North Nazimabad | September 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="training" class="cyber-console-section py-5">
+            <div class="container">
+                <div class="text-center">
+                    <!-- <h2 class="console-heading text-center mb-5">[ Accessing >> Trainings & Courses ]</h2> -->
+                    <h2 class="glitch-heading  text-center mb-5" data-text="Contact Me">[ Accessing >> Trainings &
+                        Courses ]</h2>
+                </div>
+                <div class="row g-4">
+
+                    <!-- Training 1 -->
+                    <div class="col-md-6">
+                        <div class="console-card">
+                            <span class="console-line">> Certified Cyber Security & Ethical Hacker</span>
+                            <span class="console-sub">NED Academy (PITP) | Jan - Feb 2026</span>
+                            <ul>
+                                <li>Networking Fundamentals (TCP/IP, DNS, HTTP, Ports)</li>
+                                <li>Linux & Kali Linux Environment</li>
+                                <li>Footprinting & Reconnaissance</li>
+                                <li>Vulnerability Scanning (Nmap, OpenVAS)</li>
+                                <li>Web Application Security Basics</li>
+                                <li>Phishing & Social Engineering Attacks</li>
+                                <li>Malware Concepts & Defense Techniques</li>
+                                <li>Cryptography Fundamentals (Hashing, Encryption)</li>
+                                <li>Basic Penetration Testing Labs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="console-card">
+                            <span class="console-line">> Cyber Security Practical Training</span>
+                            <span class="console-sub">TryHackMe | Ongoing</span>
+                            <ul>
+                                <li>Hands-on Penetration Testing Labs</li>
+                                <li>Web Exploitation (XSS, SQLi, IDOR)</li>
+                                <li>Privilege Escalation Techniques</li>
+                                <li>Active Directory Basics</li>
+                                <li>Blue Team & SOC Fundamentals</li>
+                                <li>CTF Challenges & Real-World Scenarios</li>
+                                <li>Linux & Windows Post-Exploitation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="experience" class="py-5">
+            <div class="container">
+                <div class="container text-center">
+                    <h2 class="glitch-heading text-center mb-5" data-text="Experience">Experience</h2>
+                </div>
+
+                <div class="timeline">
+
+                    <!-- Experience 1 -->
+                    <div class="timeline-box">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Sr. PHP Laravel Developer</h4>
+                            <p class="text-muted mb-1">
+                                Scit Forte - Karachi (Remote) | Feb 2024 – Present
+                            </p>
+                            <ul>
+                                <li>Developed large-scale ERP, management portals, finance systems, and e-commerce
+                                    platforms</li>
+                                <li>Built dynamic web applications using Laravel (MVC architecture) and RESTful APIs
+                                </li>
+                                <li>Integrated third-party services and implemented complex business logic</li>
+                                <li>Optimized database queries and improved performance of high-traffic modules</li>
+                                <li>Handled deployment, server configuration, and production maintenance</li>
+                                <li>Collaborated with cross-functional teams to deliver scalable solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="timeline-box">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Web Developer (ASP.NET MVC Intern)</h4>
+                            <p class="text-muted mb-1">
+                                Rising Institute of Computer and IT - Karachi | Aug 2023 – Sep 2023
+                            </p>
+                            <ul>
+                                <li>Completed a paid internship focused on ASP.NET MVC web development</li>
+                                <li>Assisted in building web modules and fixing application issues</li>
+                                <li>Demonstrated strong learning ability, punctuality, and professionalism</li>
+                                <li>Received appreciation for dedication and performance</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="projects-section py-5">
+            <div class="container">
+                <div class="text-center">
+                    <!-- <h2 class="about-text text-center mb-5">Projects I Covered</h2> -->
+                    <h2 class="glitch-heading  text-center mb-5" data-text="Contact Me">Projects I Covered</h2>
+                </div>
+                <div class="row g-4">
+                    <!-- Project Card 2 — OSPREY ERP -->
+                    <div class="col-md-4">
+                        <div class="project-card h-100 p-4 rounded-4">
+                            <h4 class="text-info mb-3">OSPREY ERP System</h4>
+                            <p class="text-light">
+                                A comprehensive enterprise resource planning system built with Laravel & MySQL,
+                                featuring role-based access, reporting, AI integrations, and business automation.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <a href="https://scitforte.ospreyibs.com/" target="_blank" class="visit-btn">Visit</a>
+                                <button class="why-btn ms-2" data-bs-toggle="modal"
+                                    data-bs-target="#whyModal2">Why?</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Why Modal 2 -->
+                    <div class="modal fade" id="whyModal2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-dark text-light rounded-4 p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="modal-title text-info">Why This Project?</h5>
+                                    <button type="button" class="btn-close btn-close-white"
+                                        data-bs-dismiss="modal"></button>
+                                </div>
+                                <p>
+                                    Built as a Final Year Project to deliver a scalable enterprise solution with
+                                    modular architecture, automation, reporting, and strong data security.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Project Card 3 — IBS SaaS ERP -->
+                    <div class="col-md-4">
+                        <div class="project-card h-100 p-4 rounded-4">
+                            <h4 class="text-info mb-3">IBS SaaS ERP Platform</h4>
+                            <p class="text-light">
+                                A SaaS-based ERP platform with AI-driven analytics, task prioritization,
+                                recruitment optimization, and customer segmentation.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <a href="https://ibs-staging.smartebs.net/" target="_blank" class="visit-btn">Visit</a>
+                                <button class="why-btn ms-2" data-bs-toggle="modal"
+                                    data-bs-target="#whyModal3">Why?</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Why Modal 3 -->
+                    <div class="modal fade" id="whyModal3" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-dark text-light rounded-4 p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="modal-title text-info">Why This Project?</h5>
+                                    <button type="button" class="btn-close btn-close-white"
+                                        data-bs-dismiss="modal"></button>
+                                </div>
+                                <p>
+                                    Designed to automate business workflows and provide predictive insights
+                                    through analytics, improving decision-making and operational efficiency.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Project Card 4 — Payroll Management System -->
+                    <div class="col-md-4">
+                        <div class="project-card h-100 p-4 rounded-4">
+                            <h4 class="text-info mb-3">HRM & Payroll System</h4>
+                            <p class="text-light">
+                                A complete employee management and payroll automation system with attendance,
+                                leave tracking, payslip generation, and reporting.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <a href="https://payroll-management.ospreyibs.com/login" target="_blank"
+                                    class="visit-btn">Visit</a>
+                                <button class="why-btn ms-2" data-bs-toggle="modal"
+                                    data-bs-target="#whyModal4">Why?</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Why Modal 4 -->
+                    <div class="modal fade" id="whyModal4" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-dark text-light rounded-4 p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="modal-title text-info">Why This Project?</h5>
+                                    <button type="button" class="btn-close btn-close-white"
+                                        data-bs-dismiss="modal"></button>
+                                </div>
+                                <p>
+                                    Created to streamline HR operations by automating salary processing,
+                                    employee records, and reporting with role-based access control.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Project Card 5 — Meesaq Digital Platform -->
+                    <div class="col-md-4">
+                        <div class="project-card h-100 p-4 rounded-4">
+                            <h4 class="text-info mb-3">ESG Business Platform</h4>
+                            <p class="text-light">
+                                A digital platform developed to streamline business processes with backend
+                                modules, reporting tools, and performance optimization.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <a href="https://esg.ospreyibs.com/" target="_blank" class="visit-btn">Visit</a>
+                                <button class="why-btn ms-2" data-bs-toggle="modal"
+                                    data-bs-target="#whyModal5">Why?</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Why Modal 5 -->
+                    <div class="modal fade" id="whyModal5" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-dark text-light rounded-4 p-4">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="modal-title text-info">Why This Project?</h5>
+                                    <button type="button" class="btn-close btn-close-white"
+                                        data-bs-dismiss="modal"></button>
+                                </div>
+                                <p>
+                                    Developed to improve operational efficiency through automation,
+                                    optimized database queries, and scalable Laravel architecture.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Add more cards as needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="contact" class="contact-section-anon py-5">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="glitch-heading  text-center mb-5" data-text="Contact Me">Contact Me</h2>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="contact-card-anon p-4 rounded-4">
+
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" class="form-control form-control-anon"
+                                        placeholder="Enter your name">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control form-control-anon"
+                                        placeholder="Enter your email">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Message</label>
+                                    <textarea rows="4" class="form-control form-control-anon"
+                                        placeholder="Your message..."></textarea>
+                                </div>
+
+                                <div class="text-center mt-4">
+                                    <button type="submit" class="submit-btn-anon">Send Message</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <footer class="footer-pro py-5">
+            <div class="container">
+                <div class="row justify-content-between align-items-start">
+
+                    <!-- LEFT -->
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5 class="footer-title">About</h5>
+                        <p class="footer-desc">
+                            Cybersecurity Enthusiast with expertise in penetration testing, cloud security, and secure
+                            code analysis.
+                        </p>
+                        <p class="footer-line">"Security isn't a product, it's a mindset."</p>
+                    </div>
+
+                    <!-- CENTER -->
+                    <div class="col-md-4 text-center">
+                        <h5 class="footer-title">Connect</h5>
+                        <div class="footer-icons mt-2">
+                            <a href="https://github.com/hmjunaidarshad"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/h-m-junaid-arshad-1407682a7/"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <p class="footer-legal mt-3">© 2025 | Crafted with logic & integrity</p>
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="col-md-4 text-end">
+                        <h5 class="footer-title">Contact</h5>
+                        <p class="footer-desc">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:hmjunaidarshad4@gmail.com"
+                                class="text-decoration-none text-light whatsapp-link">
+                                hmjunaidarshad4@gmail.com
+                            </a><br>
+
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="https://wa.me/923122243045" target="_blank" class="whatsapp-link">
+                                +92 312 2243045
+                            </a><br>
+
+                            <i class="fas fa-map-marker-alt me-2"></i> Karachi, Pakistan
+                        </p>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+        <!-- ============== -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            window.addEventListener('scroll', function () {
+                const navbar = document.querySelector('.navbar');
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const scrollPercent = (scrollTop / docHeight) * 100;
+                navbar.style.setProperty('--scroll-progress', scrollPercent + '%');
+
+                if (scrollTop > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+        </script>
+
+
+        <script>
+            $(document).ready(function () {
+
+                $('.cert-img').on('click', function () {
+                    const imgSrc = $(this).attr('src');
+                    $('.popup-img').attr('src', imgSrc);
+
+                    $('#imgPopup').fadeIn(200).addClass('show');
+                });
+
+                $('.popup-close, #imgPopup').on('click', function (e) {
+                    if (e.target !== $('.popup-img')[0]) {
+                        $('#imgPopup').fadeIn(200).removeClass('show');
+
+                    }
+                });
+
+            });
+        </script>
+
+
+
+        <script>
+            const canvas = document.getElementById("anonCanvas");
+            const ctx = canvas.getContext("2d");
+
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            window.addEventListener("resize", () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            });
+
+            let mouse = {
+                x: null,
+                y: null,
+                radius: 120
+            };
+
+            window.addEventListener("mousemove", (event) => {
+                mouse.x = event.x;
+                mouse.y = event.y;
+            });
+
+            class Particle {
+                constructor(x, y, dx, dy, radius, color) {
+                    this.x = x;
+                    this.y = y;
+                    this.dx = dx;
+                    this.dy = dy;
+                    this.radius = radius;
+                    this.color = color;
+                }
+
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+                    ctx.shadowBlur = 10;
+                    ctx.shadowColor = this.color;
+                    ctx.fillStyle = this.color;
+                    ctx.fill();
+                    ctx.shadowBlur = 0;
+                }
+
+                update(particles) {
+                    // Move
+                    this.x += this.dx;
+                    this.y += this.dy;
+
+                    // Bounce off walls
+                    if (this.x + this.radius > canvas.width || this.x - this.radius < 0) {
+                        this.dx = -this.dx;
+                    }
+                    if (this.y + this.radius > canvas.height || this.y - this.radius < 0) {
+                        this.dy = -this.dy;
+                    }
+
+                    // Cursor interaction
+                    let dx = mouse.x - this.x;
+                    let dy = mouse.y - this.y;
+                    let distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < mouse.radius) {
+                        let angle = Math.atan2(dy, dx);
+                        let force = (mouse.radius - distance) / mouse.radius;
+                        let moveX = Math.cos(angle) * force;
+                        let moveY = Math.sin(angle) * force;
+
+                        this.x -= moveX * 2;
+                        this.y -= moveY * 2;
+                    }
+
+                    this.draw();
+                }
+            }
+
+            let particlesArray = [];
+            const total = 100;
+
+            function init() {
+                particlesArray = [];
+                for (let i = 0; i < total; i++) {
+                    let radius = Math.random() * 3 + 1;
+                    let x = Math.random() * (canvas.width - radius * 2) + radius;
+                    let y = Math.random() * (canvas.height - radius * 2) + radius;
+                    let dx = (Math.random() - 0.5) * 1.5;
+                    let dy = (Math.random() - 0.5) * 1.5;
+                    let color = "#00ff88";
+
+                    particlesArray.push(new Particle(x, y, dx, dy, radius, color));
+                }
+            }
+
+            function animate() {
+                ctx.fillStyle = "rgba(0, 0, 0, 0.2)";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                // Draw lines between close particles
+                for (let a = 0; a < particlesArray.length; a++) {
+                    for (let b = a + 1; b < particlesArray.length; b++) {
+                        let dx = particlesArray[a].x - particlesArray[b].x;
+                        let dy = particlesArray[a].y - particlesArray[b].y;
+                        let dist = Math.sqrt(dx * dx + dy * dy);
+                        if (dist < 100) {
+                            ctx.beginPath();
+                            ctx.strokeStyle = "rgba(0, 255, 136, 0.1)";
+                            ctx.lineWidth = 1;
+                            ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+                            ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+                            ctx.stroke();
+                        }
+                    }
+
+                    particlesArray[a].update(particlesArray);
+                }
+
+                requestAnimationFrame(animate);
+            }
+
+            init();
+            animate();
+        </script>
+        <!-- ====== -->
+        <script>
+            document.querySelectorAll('.skill-bar').forEach(bar => {
+                const percent = bar.getAttribute('data-skill');
+                bar.style.setProperty('--skill-level', percent);
+            });
+        </script>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                tooltipTriggerList.map(function (tooltipTriggerEl) {
+                    return new bootstrap.Tooltip(tooltipTriggerEl)
+                })
+            });
+        </script>
+
+        <script>
+            const icons = [
+                "fa-lock",
+                "fa-shield-alt",
+                "fa-code"   // </> icon
+            ];
+
+            let currentIndex = 0;
+            const icon = document.getElementById("securityIcon");
+
+            setInterval(() => {
+
+                // Add animation class
+                icon.classList.add("icon-animate");
+
+                setTimeout(() => {
+
+                    // Remove old icon
+                    icon.classList.remove(...icons);
+
+                    // Next icon
+                    currentIndex = (currentIndex + 1) % icons.length;
+
+                    // Add new icon
+                    icon.classList.add(icons[currentIndex]);
+
+                    // Remove animation class to allow replay
+                    icon.classList.remove("icon-animate");
+
+                }, 350);
+
+            }, 2500); // change every 2.5 sec
+        </script>
+
+
+
+
+</body>
+
+
+</html>
